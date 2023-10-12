@@ -1,22 +1,36 @@
 import Icon from './icon.jpg';
 
 export default function pageLoad() {
-    const content = document.getElementById('content');
+    const homePage = document.createElement("div");
 
-    const header = document.createElement('h1');
-    header.innerText = 'BYS RESTAURANT'
+    const title = document.createElement('h1');
+    title.innerText = "GAMERS' FUEL STOP"
 
-    const explanation = document.createElement('p');
-    explanation.innerText = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis deleniti illum quisquam placeat quae dolorem ut sed, fuga eum reprehenderit ratione, voluptatibus esse atque dolore molestias. Minus quas fugiat commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur nisi odit quod molestias soluta nam aspernatur ipsa quo amet, harum repellendus, similique hic ipsam placeat repudiandae cum dolore nobis?'
+    const about = document.createElement('div');
+    const aboutH = document.createElement('h2');
+    const aboutP = document.createElement('p');
+    aboutH.innerText= "ABOUT"
+    aboutP.innerText = "Gamers' fuel stop is the best place at delivering fastest, least nutritioned, easy to consume between games foods and drinks to your gaming room. TO GAMERS FROM GAMERS(after this game)."
+    about.append(aboutH);
+    about.append(aboutP);
 
-    
+    const schedule = document.createElement('div');
+    const scheduleH = document.createElement("h2");
+    const scheduleP = document.createElement("p");
+    scheduleH.innerText = "HOURS";
+    scheduleP.innerText = "Open 24/7 Because gamers never sleep.";
+    schedule.append(scheduleH);
+    schedule.append(scheduleP);
+
     const restaurantImage = new Image();
     restaurantImage.src = Icon;
+    restaurantImage.style.width = "700px";
+    restaurantImage.style.height= "600px";
     
-    
-    content.appendChild(header);
-    content.appendChild(explanation);
-    content.appendChild(restaurantImage);
-    
+    homePage.append(title);
+    homePage.append(about);
+    homePage.append(schedule);
+    homePage.append(restaurantImage);
 
+    return homePage;
 };
