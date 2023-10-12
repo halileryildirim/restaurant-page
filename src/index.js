@@ -1,5 +1,5 @@
 import pageLoad from "./page-load";
-
+import menuLoad from "./menu-load";
 
 const content = document.getElementById('content');
 
@@ -10,9 +10,22 @@ function buttonLoad() {
     homeBtn.innerText = "HOME";
     buttons.append(homeBtn);
 
+    homeBtn.addEventListener("click", () => {
+        content.replaceChildren();
+        content.append(buttonLoad());
+        content.append(pageLoad());
+    });
+
     const menuBtn = document.createElement("button");
     menuBtn.innerText = "MENU";
     buttons.append(menuBtn);
+
+    menuBtn.addEventListener("click", () => {
+        content.replaceChildren();
+        content.append(buttonLoad());
+        content.append(menuLoad());
+    });
+
 
     const contactBtn = document.createElement("button");
     contactBtn.innerText = "CONTACT";
@@ -21,5 +34,7 @@ function buttonLoad() {
     return buttons;
     
 }
+
 content.append(buttonLoad());
 content.append(pageLoad());
+
