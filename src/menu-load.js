@@ -6,10 +6,9 @@ class menuItem {
     }
 
     getString() {
-        return this.name, this.desc, this.price;
+        return `${this.name} ${this.desc} ${this.price}`;
     }
-}
-
+};
 
 export default function menuLoad() {
     const menu = document.createElement('div');
@@ -20,11 +19,10 @@ export default function menuLoad() {
     menuFoods.append(foodsHeader);
 
     let foods = document.createElement('div');
-    let food = new food("Kebab", "Turks love it", "30$"); 
+    let food = new menuItem("Kebab", "Turks love it", "30$"); 
     foods.append(food.getString());
     menuFoods.append(foods);
     
     menu.append(menuFoods);
     return menu;
-
-}
+};
