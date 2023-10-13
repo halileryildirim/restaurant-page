@@ -28,9 +28,10 @@ export default function pageLoad() {
     restaurantImage.style.height= "600px";
     
     homePage.append(title);
+    homePage.append(restaurantImage);
     homePage.append(about);
     homePage.append(schedule);
-    homePage.append(restaurantImage);
+    
 
     return homePage;
 };

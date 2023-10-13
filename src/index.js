@@ -9,7 +9,6 @@ function buttonLoad() {
     const homeBtn = document.createElement("button");
     homeBtn.innerText = "HOME";
     buttons.append(homeBtn);
-
     homeBtn.addEventListener("click", () => {
         content.replaceChildren();
         content.append(buttonLoad());
@@ -19,21 +18,18 @@ function buttonLoad() {
     const menuBtn = document.createElement("button");
     menuBtn.innerText = "MENU";
     buttons.append(menuBtn);
-
     menuBtn.addEventListener("click", () => {
         content.replaceChildren();
         content.append(buttonLoad());
         content.append(menuLoad());
     });
-
-
+    
     const contactBtn = document.createElement("button");
     contactBtn.innerText = "CONTACT";
     buttons.append(contactBtn);
 
-    return buttons;
-    
-}
+    return buttons;  
+};
 
 content.append(buttonLoad());
 content.append(pageLoad());
