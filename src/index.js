@@ -1,3 +1,46 @@
+import initialLoad from "./initial-load";
+
+
+initialLoad();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 import pageLoad from "./page-load";
 import menuLoad from "./menu-load";
 
@@ -34,3 +77,4 @@ function buttonLoad() {
 content.append(buttonLoad());
 content.append(pageLoad());
 
+*/
