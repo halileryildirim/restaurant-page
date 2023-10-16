@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/button-load.js":
+/*!****************************!*\
+  !*** ./src/button-load.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n/* harmony import */ var _menu_load__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-load */ \"./src/menu-load.js\");\n\n\n\nfunction buttonLoad() {\n    const content = document.querySelector('#content');\n    //Create buttons tab to append buttons\n    const tabs = document.createElement('div');\n    tabs.classList = 'buttons-tab';\n\n    //create and append home button\n    const homeBtn = document.createElement('button');\n    homeBtn.innerText = \"HOME\";\n    tabs.append(homeBtn);\n\n    //create and append menu button\n    const menuBtn = document.createElement('button');\n    menuBtn.innerText = \"MENU\";\n    tabs.append(menuBtn);\n\n    //create and append contact button\n    const cntBtn = document.createElement('button');\n    cntBtn.innerText = 'CONTACT';\n    tabs.append(cntBtn);\n\n    //Link load pages with buttons\n    homeBtn.addEventListener('click', () =>{\n        content.replaceChildren((0,_page_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n    });\n\n    menuBtn.addEventListener('click', () =>{\n        content.replaceChildren((0,_menu_load__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n        \n    });\n    \n    content.appendChild(tabs);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/button-load.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-load */ \"./src/initial-load.js\");\n\n\n\n(0,_initial_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\nimport pageLoad from \"./page-load\";\nimport menuLoad from \"./menu-load\";\n\nconst content = document.getElementById('content');\n\nfunction buttonLoad() {\n    const buttons = document.createElement(\"div\");\n\n    const homeBtn = document.createElement(\"button\");\n    homeBtn.innerText = \"HOME\";\n    buttons.append(homeBtn);\n    homeBtn.addEventListener(\"click\", () => {\n        content.replaceChildren();\n        content.append(buttonLoad());\n        content.append(pageLoad());\n    });\n\n    const menuBtn = document.createElement(\"button\");\n    menuBtn.innerText = \"MENU\";\n    buttons.append(menuBtn);\n    menuBtn.addEventListener(\"click\", () => {\n        content.replaceChildren();\n        content.append(buttonLoad());\n        content.append(menuLoad());\n    });\n    \n    const contactBtn = document.createElement(\"button\");\n    contactBtn.innerText = \"CONTACT\";\n    buttons.append(contactBtn);\n\n    return buttons;  \n};\n\ncontent.append(buttonLoad());\ncontent.append(pageLoad());\n\n*/\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-load */ \"./src/initial-load.js\");\n/* harmony import */ var _button_load__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button-load */ \"./src/button-load.js\");\n\n\n\n(0,_button_load__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_initial_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\nimport pageLoad from \"./page-load\";\nimport menuLoad from \"./menu-load\";\n\nconst content = document.getElementById('content');\n\nfunction buttonLoad() {\n    const buttons = document.createElement(\"div\");\n\n    const homeBtn = document.createElement(\"button\");\n    homeBtn.innerText = \"HOME\";\n    buttons.append(homeBtn);\n    homeBtn.addEventListener(\"click\", () => {\n        content.replaceChildren();\n        content.append(buttonLoad());\n        content.append(pageLoad());\n    });\n\n    const menuBtn = document.createElement(\"button\");\n    menuBtn.innerText = \"MENU\";\n    buttons.append(menuBtn);\n    menuBtn.addEventListener(\"click\", () => {\n        content.replaceChildren();\n        content.append(buttonLoad());\n        content.append(menuLoad());\n    });\n    \n    const contactBtn = document.createElement(\"button\");\n    contactBtn.innerText = \"CONTACT\";\n    buttons.append(contactBtn);\n\n    return buttons;  \n};\n\ncontent.append(buttonLoad());\ncontent.append(pageLoad());\n\n*/\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ini
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\n\n\nfunction initialLoad() {\n    const content = document.querySelector('#content');\n    content.append((0,_page_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/initial-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-load */ \"./src/page-load.js\");\n\n\nfunction initialLoad() {\n    const content = document.querySelector('#content');\n    content.append((0,_page_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n//# sourceURL=webpack://restaurant-page/./src/initial-load.js?");
+
+/***/ }),
+
+/***/ "./src/menu-load.js":
+/*!**************************!*\
+  !*** ./src/menu-load.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ menuLoad)\n/* harmony export */ });\nclass menuItem {\n    constructor(name, desc, price) {\n        this.name = name;\n        this.desc = desc;\n        this.price = price;\n    }\n\n    getString() {\n        return `${this.name} ${this.desc} ${this.price}`;\n    }\n};\n\nfunction menuLoad() {\n    const menu = document.createElement('div');\n\n    const menuFoods = document.createElement('div');\n    const foodsHeader = document.createElement('h2');\n    foodsHeader.innerText = \"GAMER FOODS\"\n    menuFoods.append(foodsHeader);\n\n    let foods = document.createElement('div');\n    let food = new menuItem(\"Kebab\", \"Turks love it\", \"30$\"); \n    foods.append(food.getString());\n    menuFoods.append(foods);\n    \n    menu.append(menuFoods);\n    return menu;\n};\n\n\n//# sourceURL=webpack://restaurant-page/./src/menu-load.js?");
 
 /***/ }),
 
