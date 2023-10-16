@@ -14,7 +14,7 @@ function contactLoad() {
     contactMail.setAttribute("type", "text");
     contactMail.setAttribute("name", "email");
     contactMail.setAttribute("placeholder", "Enter your e-mail");
-    contactMail.setAttribute("required",);
+    contactMail.setAttribute("required","");
     contactForm.appendChild(contactMail);
 
     //Create and append the contact title
@@ -22,7 +22,7 @@ function contactLoad() {
     contactTitle.setAttribute("type", "text");
     contactTitle.setAttribute("name", "title");
     contactTitle.setAttribute("placeholder", "Title of your message");
-    contactTitle.setAttribute("required",);
+    contactTitle.setAttribute("required","");
     contactForm.appendChild(contactTitle);
 
     //Create and append the contact textarea
@@ -31,13 +31,14 @@ function contactLoad() {
     contactTA.setAttribute("rows", "4");
     contactTA.setAttribute("cols", "20");
     contactTA.setAttribute("placeholder", "Your message...");
-    contactTA.setAttribute("required",);
+    contactTA.setAttribute("required","");
     contactForm.appendChild(contactTA);
 
     //Create and append the submit button
     const contactSubmit = document.createElement("button");
     contactSubmit.setAttribute("type", "submit");
     contactSubmit.setAttribute("value", "submit");
+    contactSubmit.innerText = "SUBMIT";
     contactForm.appendChild(contactSubmit);
 
     contact.appendChild(contactForm);
