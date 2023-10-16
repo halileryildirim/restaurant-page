@@ -1,5 +1,6 @@
 import pageLoad from "./page-load";
 import menuLoad from "./menu-load";
+import contactLoad from "./contact-load";
 
 function buttonLoad() {
     const content = document.querySelector('#content');
@@ -31,6 +32,10 @@ function buttonLoad() {
         content.replaceChildren(buttonLoad(), menuLoad());
         
     });
+
+    cntBtn.addEventListener('click', () => {
+        content.replaceChildren(buttonLoad(), contactLoad());
+    })
     
     return tabs;
 }

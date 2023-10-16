@@ -44,3 +44,5 @@ function contactLoad() {
 
     return contact;
 }
+
+export default contactLoad;
