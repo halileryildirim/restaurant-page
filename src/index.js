@@ -1,7 +1,9 @@
 import initialLoad from "./initial-load";
+import buttonLoad from "./button-load";
 
-
+buttonLoad();
 initialLoad();
+
 
 
 
