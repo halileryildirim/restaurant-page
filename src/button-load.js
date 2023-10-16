@@ -10,17 +10,17 @@ function buttonLoad() {
     //create and append home button
     const homeBtn = document.createElement('button');
     homeBtn.innerText = "HOME";
-    tabs.append(homeBtn);
+    tabs.appendChild(homeBtn);
 
     //create and append menu button
     const menuBtn = document.createElement('button');
     menuBtn.innerText = "MENU";
-    tabs.append(menuBtn);
+    tabs.appendChild(menuBtn);
 
     //create and append contact button
     const cntBtn = document.createElement('button');
     cntBtn.innerText = 'CONTACT';
-    tabs.append(cntBtn);
+    tabs.appendChild(cntBtn);
 
     //Link load pages with buttons
     homeBtn.addEventListener('click', () =>{
