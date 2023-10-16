@@ -2,26 +2,30 @@ import Icon from './icon.jpg';
 
 function pageLoad() {
     const homePage = document.createElement("div");
+    homePage.classList = 'home';
 
     //create and append header for home page
     const title = document.createElement('h1');
+    title.classList = 'home-title';
     title.innerText = "Best Restaurant Ever"
-
+    
     //create and append about for home page
     const about = document.createElement('div');
+    about.classList = 'home-about';
     const aboutH = document.createElement('h2');
     const aboutP = document.createElement('p');
-    aboutH.innerText= "ABOUT"
-    aboutP.innerText = "We are the best restaurant because we make the best foods for the cheapest prices."
+    aboutH.innerText= "ABOUT";
+    aboutP.innerText = "We are the best restaurant because we make the best foods for the cheapest prices.";
     about.append(aboutH);
     about.append(aboutP);
 
     //create and append hours for homepage
     const schedule = document.createElement('div');
+    schedule.classList = 'home-schedule';
     const scheduleH = document.createElement("h2");
     const scheduleP = document.createElement("p");
     scheduleH.innerText = "HOURS";
-    scheduleP.innerText = "Open 24/7 (Because all our chefs were gamers back then.(they never sleep))";
+    scheduleP.innerText = "Open 24/7 Because all our staff were gamers back then.(they never sleep)";
     schedule.append(scheduleH);
     schedule.append(scheduleP);
 

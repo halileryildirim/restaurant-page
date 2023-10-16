@@ -1,8 +1,8 @@
 import pageLoad from "./page-load";
 
-const content = document.querySelector('#content');
 
 function initialLoad() {
+    const content = document.querySelector('#content');
     content.append(pageLoad());
 }
 
