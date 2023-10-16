@@ -32,8 +32,8 @@ function pageLoad() {
     restaurantImage.style.height= "600px";
     
     //append the divs into main homepage div
-    homePage.append(title);
     homePage.append(restaurantImage);
+    homePage.append(title);
     homePage.append(about);
     homePage.append(schedule);
     
