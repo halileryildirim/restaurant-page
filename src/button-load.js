@@ -24,15 +24,15 @@ function buttonLoad() {
 
     //Link load pages with buttons
     homeBtn.addEventListener('click', () =>{
-        content.replaceChildren(pageLoad());
+        content.replaceChildren(buttonLoad(), pageLoad());
     });
 
     menuBtn.addEventListener('click', () =>{
-        content.replaceChildren(menuLoad());
+        content.replaceChildren(buttonLoad(), menuLoad());
         
     });
     
-    content.appendChild(tabs);
+    return tabs;
 }
 
 export default buttonLoad;
