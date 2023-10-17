@@ -1,0 +1,45 @@
+body, html{
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: #362417;
+    overflow: hidden;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttons-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+button {
+    height: 50px;
+    width: 125px;
+    border-radius: 10px;
+    background-color: #f1dabf;
+    border: 2px solid #92817a;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #f1dabf;
+    align-items: center;
+    padding: 48px;
+    text-align: center;
+    height: fit-content;
+    margin: 0;
+}
+
+.menu{
+    background-color: #f1dabf;
+}
