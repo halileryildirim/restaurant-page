@@ -1,5 +1,6 @@
 function contactLoad() {
     const contact = document.createElement('div');
+    contact.classList = 'contact';
 
     //Create and append contact header
     const contactHeader = document.createElement('h1');
@@ -28,8 +29,8 @@ function contactLoad() {
     //Create and append the contact textarea
     const contactTA = document.createElement('textarea');
     contactTA.setAttribute("name", "textarea");
-    contactTA.setAttribute("rows", "4");
-    contactTA.setAttribute("cols", "20");
+    contactTA.setAttribute("rows", "5");
+    contactTA.setAttribute("cols", "30");
     contactTA.setAttribute("placeholder", "Your message...");
     contactTA.setAttribute("required","");
     contactForm.appendChild(contactTA);

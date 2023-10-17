@@ -19,13 +19,12 @@ body, html{
     gap: 16px;
 }
 
-
 button {
     height: 50px;
     width: 125px;
     border-radius: 10px;
     background-color: #f1dabf;
-    border: 2px solid #92817a;
+    border: 1px solid #04030f;
 }
 
 .home{
@@ -42,4 +41,43 @@ button {
 
 .menu{
     background-color: #f1dabf;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.menu-drinks {
+    padding-bottom: 16px;
+}
+
+.contact{
+    background-color: #f1dabf;
+    text-align: center;
+}
+
+input{
+    height: 24px;
+    width: 256px;
+    padding: 0;
+}
+
+textarea{
+    width: 254px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

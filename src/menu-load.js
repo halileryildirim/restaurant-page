@@ -3,6 +3,7 @@ function menuLoad() {
     const menu = document.createElement('div');
     const menuHeader = document.createElement('h1');
     menuHeader.textContent = "MENU"
+    menuHeader.classList = "menu-header";
     menu.appendChild(menuHeader);
     menu.classList = "menu";
 
